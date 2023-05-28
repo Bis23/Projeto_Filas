@@ -7,10 +7,10 @@ public class Estacionamento {
         String placa = entrada.substring(2);
 
         if (estacionamento.estaCheia()) {
-            System.out.println("Não há vagas disponíveis para o carro com placa " + placa + ". O carro aguardará.");
+            System.out.println("Não há vagas para o carro " + placa + ". Ele deve esperar.");
         } else {
             estacionamento.enfileira(placa);
-            System.out.println("Carro com placa " + placa + " estacionou.");
+            System.out.println("O carro " + placa + " estacionou.");
         }
     }
 
@@ -23,12 +23,12 @@ public class Estacionamento {
           deslocamentos++;
 
           if (carroAtual.equals(placa)) {
-              System.out.println("Carro com placa " + placa + " saiu do estacionamento após " + deslocamentos + " deslocamento(s).");
+              System.out.println("O carro " + placa + " saiu após " + deslocamentos + " deslocamento(s).");
               return;
           }
       }
 
-      System.out.println("O carro com placa " + placa + " não está estacionado no extremo norte.");
+      System.out.println("O carro " + placa + " não está no estacionamento.");
   }
 
     // Simulação do Estacionamento
