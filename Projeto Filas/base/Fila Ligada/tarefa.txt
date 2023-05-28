@@ -1,0 +1,11 @@
+estacionamento
+
+  --------------------
+->      ca cc cb ca   ->
+  --------------------
+
+Se for retirar um carro qualquer, vai localizar, retirar os
+carros da frente (se houver). Retirar o carro e colocar na
+primeira posição.
+
+Carro: placa e num. de manobras
